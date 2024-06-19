@@ -1,44 +1,33 @@
 import React from 'react'
+import {useState, useEffect} from 'react';
+import ScrollReveal from 'scrollreveal';
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
+  useEffect(() => {
+    ScrollReveal().reveal('.projects-scroll', { duration: 2500, distance: '500px', origin: 'bottom' })
+  })
   return (
     <div>
-    <section id="projects" className="scroll-margin-top-16">
+    <section id="projects" className="scroll-margin-top-16 projects-scroll">
       <h1 className='text-4xl m-8'>PROJECTS</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-         It has survived not only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with the release of 
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-           software like Aldus PageMaker including versions of Lorem Ipsum
-           There are many variations of passages of Lorem Ipsum available,
-          but the majority have suffered alteration in some form, by injected humour,
-          or randomised words which don't look even slightly believable. If you are going to 
-          use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
-           in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined 
-           chunks as necessary, making this the first true generator on the Internet. It uses a dictionary 
-           of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks 
-           reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-
-</p>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-         It has survived not only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with the release of 
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-           software like Aldus PageMaker including versions of Lorem Ipsum
-           There are many variations of passages of Lorem Ipsum available,
-          but the majority have suffered alteration in some form, by injected humour,
-          or randomised words which don't look even slightly believable. If you are going to 
-          use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
-           in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined 
-           chunks as necessary, making this the first true generator on the Internet. It uses a dictionary 
-           of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks 
-           reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-
-</p>
+      <div className='flex flex-col lg:flex-row projects-scroll'>
+      <img src = "nanoprocessor.png" className='m-6 sm:m-12 lg:ml-40 lg:w-96'></img>
+      <div className='lg:w-1/2 lg:place-self-center m-6 md:m-8 lg:mr-40 '>
+      <p className='text-3xl'>4-bit nano-processor</p>
+      <a className='break-all' href = "https://github.com/SandaliLiyanage/Nanoprocessor-Design-Project" ><u>https://github.com/SandaliLiyanage/Nanoprocessor-Design-Project</u></a>
+      <p >Designed a 4-bit nano-processor for the course module Computer Organization & Digital Design in the second semester at the University of Moratuwa.</p>
+      </div>
+      </div>
+      <div className='flex flex-col lg:flex-row projects-scroll'>
+      <img src = "RPAL.png" className='m-6 sm:m-12 lg:ml-40 lg:w-96 '></img>
+      <div className='lg:w-1/2 lg:place-self-center m-6 md:m-8 lg:mr-40 '>
+      <p className='text-3xl'>RPAL - Interpreter</p>
+      <a className='break-all' href = "https://github.com/rajivaPavan/rpal-project" ><u>https://github.com/rajivaPavan/rpal-project</u></a>
+      <p >Implemented an interpreter for the RPAL language using the given Lexical, Grammar and Semantic Rules.</p>
+      </div>  
+      </div>
+      
     </section>
     </div>
   )

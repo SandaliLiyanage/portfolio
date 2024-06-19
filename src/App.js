@@ -4,6 +4,7 @@ import Nav from './components/nav';
 import Projects from './components/projects';
 import Contacts from './components/contacts';
 import Skills from './components/skills';
+import Experience from './components/experience';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Home />
               <Projects />
               <Skills />
+              <Experience/>
               <Contacts />
           </BrowserRouter>
         

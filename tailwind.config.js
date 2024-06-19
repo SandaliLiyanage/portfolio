@@ -22,6 +22,15 @@ module.exports = {
     },
     extend: {},
   },
+
+  theme: {
+    extend: {
+      width: {
+        '128': '500px',
+      }
+    }
+  
+  },
   plugins: [],
 }
 
