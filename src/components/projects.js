@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 import ScrollReveal from 'scrollreveal';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ export default function Projects() {
     <section id="projects" className="scroll-margin-top-16 projects-scroll">
       <h1 className='text-4xl m-8'>PROJECTS</h1>
       <div className='flex flex-col lg:flex-row projects-scroll'>
-      <img src = "nanoprocessor.png" className='m-6 sm:m-12 lg:ml-40 lg:w-96'></img>
+      <img src={process.env.PUBLIC_URL + "/nanoprocessor.png"}className='m-6 sm:m-12 lg:ml-40 lg:w-96'></img>
       <div className='lg:w-1/2 lg:place-self-center m-6 md:m-8 lg:mr-40 '>
       <p className='text-3xl'>4-bit nano-processor</p>
       <a className='break-all' href = "https://github.com/SandaliLiyanage/Nanoprocessor-Design-Project" ><u>https://github.com/SandaliLiyanage/Nanoprocessor-Design-Project</u></a>
@@ -20,7 +20,7 @@ export default function Projects() {
       </div>
       </div>
       <div className='flex flex-col lg:flex-row projects-scroll'>
-      <img src = "RPAL.png" className='m-6 sm:m-12 lg:ml-40 lg:w-96 '></img>
+      <img src={process.env.PUBLIC_URL + "/RPAL.png"} className='m-6 sm:m-12 lg:ml-40 lg:w-96 '></img>
       <div className='lg:w-1/2 lg:place-self-center m-6 md:m-8 lg:mr-40 '>
       <p className='text-3xl'>RPAL - Interpreter</p>
       <a className='break-all' href = "https://github.com/rajivaPavan/rpal-project" ><u>https://github.com/rajivaPavan/rpal-project</u></a>

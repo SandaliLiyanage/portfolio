@@ -16,11 +16,11 @@ export default function Contacts() {
           </div>
           <div className='lg:w-1/2 place-self-center'>
             	<ul className='flex flex-row justify-center m-8' >
-                <li><a href="https://www.facebook.com/sandalikLiyanage"><img className= "m-5" src="linkedin.png"></img></a></li>
-                <li><a href="https://www.facebook.com/sandalikLiyanage"><img className= "m-5" src="facebook2.png"></img></a></li>
-                <li><a href="https://www.facebook.com/sandalikLiyanage"><img className= "m-5" src="instagram2.png"></img></a></li>
-                <li><a href="https://www.facebook.com/sandalikLiyanage"><img className= "m-5" src="github.png"></img></a></li>
-                <li><a href="https://www.facebook.com/sandalikLiyanage"><img className= "m-5" src="twitter.png"></img></a></li>
+                <li><a href="www.linkedin.com/in/sandaliliyanage-cse"><img className= "m-5" src={process.env.PUBLIC_URL + "/linkedin.png" }></img></a></li>
+                <li><a href="https://www.facebook.com/sandalikLiyanage"><img className= "m-5" src={process.env.PUBLIC_URL + "/facebook2.png"}></img></a></li>
+                <li><a href="https://github.com/SandaliLiyanage"><img className= "m-5" src={process.env.PUBLIC_URL + "/github.png"}></img></a></li>
+                <li><a href="https://www.facebook.com/sandalikLiyanage"><img className= "m-5" src={process.env.PUBLIC_URL + "/instagram2.png"}></img></a></li>
+                <li><a href="https://www.facebook.com/sandalikLiyanage"><img className= "m-5" src={process.env.PUBLIC_URL + "/twitter.png"}></img></a></li>
 
 
             </ul>
