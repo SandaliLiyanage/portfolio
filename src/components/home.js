@@ -1,13 +1,12 @@
 import React from 'react'
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 import ScrollReveal from 'scrollreveal';   
 import './home.css';
 
 
 export default function Home() {
 
-  const [headerVisible, setHeaderVisible]= useState(false);
-  const [borderRabdius, setborderRadius]= useState('rounded-full');
+
 
 
   useEffect(()=> {
@@ -49,3 +48,5 @@ export default function Home() {
 
 
 // bg-cover bg-center bg-top
+  // const [headerVisible, setHeaderVisible]= useState(false);
+  // const [borderRabdius, setborderRadius]= useState('rounded-full');

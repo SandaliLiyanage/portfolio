@@ -1,7 +1,6 @@
 import React from 'react'
 import {useEffect} from 'react';
 import ScrollReveal from 'scrollreveal';
-import { Link } from 'react-router-dom';
 
 export default function Projects() {
   useEffect(() => {

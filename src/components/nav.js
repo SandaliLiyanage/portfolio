@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState, useEffect} from 'react';   
+import {useState} from 'react';   
 import {HashLink as Link } from 'react-router-hash-link';
 
 export default function Nav() {
