@@ -46,7 +46,3 @@ export default function Home() {
   )
 }
 
-
-// bg-cover bg-center bg-top
-  // const [headerVisible, setHeaderVisible]= useState(false);
-  // const [borderRabdius, setborderRadius]= useState('rounded-full');
